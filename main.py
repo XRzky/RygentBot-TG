@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
                     )
 
-API_KEY = os.environ.get("API_TOKEN", None)
+TOKEN = os.environ['TOKEN']
 
 PATH = os.path.dirname(os.path.realpath(__file__)) + '/'
 
@@ -74,7 +74,7 @@ def init_user(user):  # 初始化用户
         preference_list[str(user.id)]['name'] = user.full_name
         threading.Thread(target=save_preference).start()
 
-updater = telegram.ext.Updater(token=API_TOKEN, use_context=True)
+updater = telegram.ext.Updater(TOKEN)
 dispatcher = updater.dispatcher
 
 me = updater.bot.get_me()
