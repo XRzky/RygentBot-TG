@@ -20,5 +20,6 @@
     "not_an_admin": "You have no permission.",
     "reply_or_enter_id": "Please reply to a message or enter the ID of the user who has been banned.",
     "user_not_found": "User not found.",
-    "be_unbanned": "You have been unbanned."
+    "be_unbanned": "You have been unbanned.",
+    "help_text": "Welcome in the Bot! You're Admin!\n\n📬 All the messages that will be sent to this bot by other users in private chat, will be forwarded to you.\n📩 To reply to an user, reply to the message forwarded by the bot and send a message or a media (photo or other).\n🚷 You can ban or unban an user by the bot using /ban and /unban, always replying to his message\n👮🏻 If you're the bot founder, you can use /admin or /unadmin to add or remove an Admin of the Bot."
 }
