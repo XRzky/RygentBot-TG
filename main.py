@@ -228,7 +228,7 @@ def process_command(bot, update):  # 处理指令
     elif command[0] == 'help' : #Help
         if update.message.from_user.id == CONFIG['Admin'] \
             and update.message.chat_id == CONFIG['Admin']:
-            bot.send_message(text=LANG['help_text'])
+            bot.send_message(chat_id=update.message.chat_id, text=LANG['help_text'])
         else:
             bot.send_message(chat_id=update.message.chat_id, text=LANG['not_an_admin'])
     elif command[0] == 'ban': # 封禁用户    
